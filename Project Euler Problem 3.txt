@@ -1,0 +1,10 @@
+number = 600851475143
+primeFactor = 2
+c = 0
+while primeFactor <= number:
+	while number % primeFactor == 0:
+		number = number / primeFactor
+	c = primeFactor
+	primeFactor = primeFactor + 1
+	if number == 1:
+		print(c)
