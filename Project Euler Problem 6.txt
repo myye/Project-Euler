@@ -1,0 +1,13 @@
+sumOfSquares = 0
+squareOfSums = 0
+a = 1
+b = 1
+sum = 0
+while a < 101:
+	sumOfSquares = sumOfSquares + (a * a)
+	a = a + 1
+while b < 101:
+	sum = sum +b
+	b = b + 1
+squareOfSums = sum * sum
+print(squareOfSums - sumOfSquares)
