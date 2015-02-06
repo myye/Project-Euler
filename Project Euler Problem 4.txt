@@ -1,0 +1,19 @@
+def palindrome(n):
+	myStr = str(n)
+	if myStr == myStr[::-1]:
+		return 1	
+	else:
+		return 0
+a = 999
+b = 999
+product = 0
+d = 0
+while a >= 100 and b >= 100:
+	product = a*b
+	a = a - 1
+	d = a * b
+	if product == 100 * b:
+		b = b - 1
+		a = 999
+	if palindrome(product) == 1 and product > d:
+		print(product)
